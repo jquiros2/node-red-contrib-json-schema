@@ -1,11 +1,11 @@
 # node-red-contrib-json-full-schema-validator
-JSON Full Schema validator for Node Red
-This node is pretty easy to use.
-Open node properties and just choose which property object wants to validate and paste JSON Schema
+JSON Full Schema validator for Node Red is pretty easy to use.
+Just open node properties and choose which property object wants to validate and paste JSON Schema
 - OK will returned in first response
 - KO will returned in second response. Error object with explanation will added in msg
 
-JSON Schema:
+**JSON Schema:**
+
 {
   "title": "Person",
   "type": "object",
@@ -40,6 +40,5 @@ msg.payload=
 msg.payload= 
 {
   "firstName": "John",
-//  "lastName": "Doe",
   "age": 1
 };
