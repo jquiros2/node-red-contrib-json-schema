@@ -1,46 +1,63 @@
 {
-    "name": "node-red-contrib-json-schema-validator",
-    "version": "0.0.3",
-    "description": "JSON Schema validator for Node Red",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alessh/node-red-contrib-json-schema.git"
-    },
-    "keywords": [
-        "schema",
-        "json",
-        "node-red",
-        "node"
-    ],
-    "node-red": {
-        "nodes": {
-            "json-schema": "schema.js"
-        }
-    },
-    "author": {
-        "name": "Andre Alexandre Avila"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/alessh/node-red-contrib-json-schema/issues"
-    },
-    "homepage": "https://github.com/alessh/node-red-contrib-json-schema#readme",
-    "dependencies": {
-        "ajv": "^5.2.2",
-        "global": "^4.3.2"
-    },
-    "maintainers": [
-        {
-            "name": "chameleonbr",
-            "email": "chameleonbr@gmail.com"
-        },
-        {
-            "name": "alessh",
-            "email": "alessandro.holanda@hotmail.com"
-        }
-    ]
+  "_from": "node-red-contrib-full-msg-json-schema-validation",
+  "_id": "node-red-contrib-full-msg-json-schema-validation@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-0qgQkV6XlVdZcETcRQVVX5Di58IkvBzDj8F5la6V5j2r/VmpRWzNA54HaKiB1LevZPcItBmD4EYiVRZMxQxZ7Q==",
+  "_location": "/node-red-contrib-full-msg-json-schema-validation",
+  "_npmUser": {
+    "email": "oarroyo@zoho.com",
+    "name": "oarroyo"
+  },
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-contrib-full-msg-json-schema-validation",
+    "name": "node-red-contrib-full-msg-json-schema-validation",
+    "escapedName": "node-red-contrib-full-msg-json-schema-validation",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-full-msg-json-schema-validation/-/node-red-contrib-full-msg-json-schema-validation-1.0.2.tgz",
+  "_shasum": "2ac7f5fee310cf5419535e3aa6a205fb38a78c6c",
+  "_spec": "node-red-contrib-full-msg-json-schema-validation",
+  "_where": "C:\\Users\\oarroyog\\.node-red\\node_modules",
+  "bugs": {
+    "url": "https://github.com/grillico/node-red-contrib-json-schema/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ajv": "^5.2.2",
+    "global": "^4.3.2"
+  },
+  "deprecated": false,
+  "description": "JSON Schema validator for Node Red",
+  "homepage": "https://github.com/grillico/node-red-contrib-json-schema#readme",
+  "keywords": [
+    "json",
+    "node",
+    "node-red",
+    "schema"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "node-red-contrib-full-msg-json-schema-validation",
+  "node-red": {
+    "nodes": {
+      "json-schema": "schema.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grillico/node-red-contrib-json-schema.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
 }

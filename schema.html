@@ -1,25 +1,28 @@
 <script type="text/javascript">
     /*global RED*/
-    RED.nodes.registerType('json-schema-validator', {
+    RED.nodes.registerType('json-full-schema-validator', {
         category: 'function',
         inputs: 1,
-        outputs: 1,
+        outputs: 2,
         color: "#debd5c",
         icon: "function.png",
-        paletteLabel: "json schema validator",
+        paletteLabel: "json full schema validator",
         defaults: {
             name: {
                 value: ""
             },
+            property: {value:"payload", required:true, validate: RED.validators.typedInput("propertyType")},
+            propertyType: { value:"msg" },
             func: {
                 value: ""
             }
         },
         label: function() {
-            return this.name || "JSON Schema validator";
+            return this.name || "JSON Full Schema validator";
         },
         oneditprepare: function() {
             var that = this;
+            $("#node-input-property").typedInput({default:this.propertyType||'msg',types:['msg','flow','global','jsonata']});
             this.editor = RED.editor.createEditor({
                 id: 'node-input-func-editor',
                 mode: 'ace/mode/javascript',
@@ -46,6 +49,8 @@
             }
             $("#node-input-func").val(this.editor.getValue());
             delete this.editor;
+            this.propertyType = $("#node-input-property").typedInput('type');
+            $("#node-input-propertyType").val(this.propertyType);
         },
         oneditresize: function(size) {
             var rows = $("#dialog-form>div:not(.node-text-editor-row)");
@@ -61,10 +66,15 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="json-schema-validator">
+<script type="text/x-red" data-template-name="json-full-schema-validator">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-property">Property</label>
+        <input type="text" id="node-input-property" style="width: 100%"/>
+		<input type="hidden" id="node-input-propertyType"/>
     </div>
     <div class="form-row" style="margin-bottom: 0px;">
         <label for="node-input-func"><i class="fa fa-wrench"></i> JSON Schema</label>
@@ -76,7 +86,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="json-schema-validator">
+<script type="text/x-red" data-help-name="json-full-schema-validator">
     <p>JSON Schema validator</p>
     <p>Put your JSON Schema on editor or in msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
 </script>
