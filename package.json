@@ -9,7 +9,7 @@
     "global": "^4.3.2"
   },
   "deprecated": false,
-  "description": "JSON Schema validator for Node Red",
+  "description": "JSON Schema validator for Node Red with Precision Selector",
   "homepage": "https://github.com/jquiros2/node-red-contrib-json-schema-precision#readme",
   "keywords": [
     "json",
@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "node-red-contrib-full-msg-json-schema-validation",
+  "name": "@jquiros2/json-schema-validation-precision",
   "node-red": {
     "nodes": {
       "json-schema": "schema.js"
