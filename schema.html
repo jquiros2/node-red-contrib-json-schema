@@ -109,6 +109,9 @@
 
 <script type="text/x-red" data-help-name="json-full-schema-validator-precision">
     <p>JSON Schema validator</p>
-    <p>Put your JSON Schema on editor or in msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
-    <p>Enter your value for the ajv precision option. This is the number of decimal places to validate for numbers.</p>
+    <p>Send the schema to validate in via msg.payload or set the "Property" name in the options.</p>
+    <p>Paste your JSON schema definition in the options, or in incoming msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
+    <p>Select your value for the ajv precision option. This is the number of decimal places to validate for numbers.  Default is set to 6.</p>
+    <p>Will output to 1 if all good, or to two if there are issues, adding msg.error with the issues.</p>
+
 </script>
