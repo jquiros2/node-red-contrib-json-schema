@@ -19,10 +19,16 @@ which was based on https://www.github.com/chameleonbr/node-red-contrib-json-sche
     Select your value for the ajv precision option. This is the number of decimal places to validate for numbers.  Default is set to 6.
     Will output to 1 if all good, or to two if there are issues, adding msg.error with the issues.
 
+<div style="text-align: center;">
 ![alt text](image.png)
-
+</div>
+<div style="text-align: center;">
 ![alt text](image-1.png)
+<div style="text-align: center;">
 
+[github](https://github.com/jquiros2/node-red-contrib-json-schema-precision)
+[npmjs](https://www.npmjs.com/package/@jquiros/json-schema-validation-precision)
+[Node-Red Library](https://flows.nodered.org/node/@jquiros/json-schema-validation-precision)
 
 # node-red-contrib-json-full-schema-validator
 (incoming documentation from forked from here on...)
