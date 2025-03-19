@@ -1,5 +1,7 @@
+var Ajv = require('ajv');
+
 module.exports = function(RED) {
-    function JsonFullSchemaValidatorNode(config) {
+    function JsonFullSchemaValidatorNodePrecision(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         node.name = config.name;
@@ -26,5 +28,5 @@ module.exports = function(RED) {
             }
         });
     }
-    RED.nodes.registerType("json-full-schema-validator", JsonFullSchemaValidatorNode);
+    RED.nodes.registerType("json-full-schema-validator-precision", JsonFullSchemaValidatorNodePrecision);
 }

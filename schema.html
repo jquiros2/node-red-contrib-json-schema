@@ -1,12 +1,12 @@
 <script type="text/javascript">
     /*global RED*/
-    RED.nodes.registerType('json-full-schema-validator', {
+    RED.nodes.registerType('json-full-schema-validator-precision', {
         category: 'function',
         inputs: 1,
         outputs: 2,
         color: "#debd5c",
         icon: "function.png",
-        paletteLabel: "json full schema validator",
+        paletteLabel: "json full schema validator with precision selector",
         defaults: {
             name: {
                 value: ""
@@ -19,7 +19,7 @@
             precision: { value: 1 } // Default precision value
         },
         label: function() {
-            return this.name || "JSON Full Schema validator";
+            return this.name || "JSON Full Schema validator with precision";
         },
         oneditprepare: function() {
             var that = this;
@@ -69,7 +69,7 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="json-full-schema-validator">
+<script type="text/x-red" data-template-name="json-full-schema-validator-precision">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -93,7 +93,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="json-full-schema-validator">
+<script type="text/x-red" data-help-name="json-full-schema-validator-precision">
     <p>JSON Schema validator</p>
     <p>Put your JSON Schema on editor or in msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
 </script>

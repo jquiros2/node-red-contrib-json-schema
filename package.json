@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "node-red-contrib-full-msg-json-schema-validation-precision",
+  "name": "node-red-contrib-full-msg-json-schema-validation",
   "node-red": {
     "nodes": {
       "json-schema": "schema.js"
