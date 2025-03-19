@@ -1,34 +1,6 @@
 {
-  "_from": "node-red-contrib-full-msg-json-schema-validation",
-  "_id": "node-red-contrib-full-msg-json-schema-validation@1.1.0",
-  "_inBundle": false,
-  "_integrity": "sha512-0qgQkV6XlVdZcETcRQVVX5Di58IkvBzDj8F5la6V5j2r/VmpRWzNA54HaKiB1LevZPcItBmD4EYiVRZMxQxZ7Q==",
-  "_location": "/node-red-contrib-full-msg-json-schema-validation",
-  "_npmUser": {
-    "email": "oarroyo@zoho.com",
-    "name": "oarroyo"
-  },
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "node-red-contrib-full-msg-json-schema-validation",
-    "name": "node-red-contrib-full-msg-json-schema-validation",
-    "escapedName": "node-red-contrib-full-msg-json-schema-validation",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/node-red-contrib-full-msg-json-schema-validation/-/node-red-contrib-full-msg-json-schema-validation-1.1.0.tgz",
-  "_shasum": "2ac7f5fee310cf5419535e3aa6a205fb38a78c6c",
-  "_spec": "node-red-contrib-full-msg-json-schema-validation",
-  "_where": "C:\\Users\\oarroyog\\.node-red\\node_modules",
   "bugs": {
-    "url": "https://github.com/oarroyog/node-red-contrib-json-schema/issues"
+    "url": "https://github.com/jquiros2/node-red-contrib-json-schema-precision/issues"
   },
   "bundleDependencies": [],
   "dependencies": {
@@ -38,7 +10,7 @@
   },
   "deprecated": false,
   "description": "JSON Schema validator for Node Red",
-  "homepage": "https://github.com/oarroyog/node-red-contrib-json-schema#readme",
+  "homepage": "https://github.com/jquiros2/node-red-contrib-json-schema-precision#readme",
   "keywords": [
     "json",
     "node",
@@ -47,7 +19,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "node-red-contrib-full-msg-json-schema-validation",
+  "name": "node-red-contrib-full-msg-json-schema-validation-precision",
   "node-red": {
     "nodes": {
       "json-schema": "schema.js"
@@ -55,10 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oarroyog/node-red-contrib-json-schema"
+    "url": "git+https://github.com/jquiros2/node-red-contrib-json-schema-precision.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.1.0"
+  "version": "1.1.0",
+  "devDependencies": {},
+  "author": "Jon Quiros based on others"
 }
