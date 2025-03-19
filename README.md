@@ -1,5 +1,13 @@
 # node-red-contrib-json-full-schema-validator-precision
-Starting to work on this as I need to be able to control the multipleofprecision option when calling ajv.
+I needed to be able to control the multipleofprecision option when calling ajv.
+
+Spent a couple of days trying to figure out floating point math, used decimal.js, etc... but still had problems validating schemas.  Then realized it was the validation function itself.
+
+In the end, it was the way ajv does its calculations (no worries with integers), and saw it has a multipleOfPrecision option (https://ajv.js.org/options.html#multipleofprecision) for setting this nicely.
+
+This node simply builds on existing json-schema validate nodes others have worked on, adding the option as a dropdown, and updated packages.
+
+Default is set to 6.
 
 Based on https://www.github.com/oarroyog/node-red-contrib-json-schema
 which was based on https://www.github.com/alessh/node-red-contrib-json-schema

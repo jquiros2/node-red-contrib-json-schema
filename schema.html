@@ -37,7 +37,7 @@
                 fields: ['name']
             });
             this.editor.focus();
-            $("#node-input-precision").val(this.precision); // Set precision value
+            $("#node-input-precision").val(this.precision); // Set selected value
         },
         oneditsave: function() {
             var annot = this.editor.getSession().getAnnotations();
@@ -53,7 +53,7 @@
             delete this.editor;
             this.propertyType = $("#node-input-property").typedInput('type');
             $("#node-input-propertyType").val(this.propertyType);
-            this.precision = $("#node-input-precision").val(); // Save precision value
+            this.precision = $("#node-input-precision").val(); // Save selected value
         },
         oneditresize: function(size) {
             var rows = $("#dialog-form>div:not(.node-text-editor-row)");
@@ -76,7 +76,21 @@
     </div>
     <div class="form-row">
         <label for="node-input-precision"><i class="fa fa-wrench"></i> Precision</label>
-        <input type="number" id="node-input-precision" placeholder="Enter precision">
+        <select id="node-input-precision">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6" selected>6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
     </div>
     <div class="form-row">
         <label for="node-input-property">Property</label>
