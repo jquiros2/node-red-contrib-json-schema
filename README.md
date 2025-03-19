@@ -13,11 +13,11 @@ Based on https://www.github.com/oarroyog/node-red-contrib-json-schema
 which was based on https://www.github.com/alessh/node-red-contrib-json-schema
 which was based on https://www.github.com/chameleonbr/node-red-contrib-json-schema
 
-    <p>JSON Schema validator with multiple of Precision selector</p>
-    <p>Send the schema to validate in via msg.payload or set the "Property" name in the options.</p>
-    <p>Paste your JSON schema definition in the options, or in incoming msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
-    <p>Select your value for the ajv precision option. This is the number of decimal places to validate for numbers.  Default is set to 6.</p>
-    <p>Will output to 1 if all good, or to two if there are issues, adding msg.error with the issues.</p>
+    JSON Schema validator with multiple of Precision selector
+    Send the schema to validate in via msg.payload or set the "Property" name in the options.
+    Paste your JSON schema definition in the options, or in incoming msg.schema and node will validate msg.payload. Error is returned on msg.error.
+    Select your value for the ajv precision option. This is the number of decimal places to validate for numbers.  Default is set to 6.
+    Will output to 1 if all good, or to two if there are issues, adding msg.error with the issues.
 
 ![alt text](image.png)
 
