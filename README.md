@@ -18,13 +18,12 @@ which was based on https://www.github.com/chameleonbr/node-red-contrib-json-sche
     Paste your JSON schema definition in the options, or in incoming msg.schema and node will validate msg.payload. Error is returned on msg.error.
     Select your value for the ajv precision option. This is the number of decimal places to validate for numbers.  Default is set to 6.
     Will output to 1 if all good, or to two if there are issues, adding msg.error with the issues.
-
-<div style="text-align: center;">
+<p align="center">
 ![alt text](image.png)
-</div>
-<div style="text-align: center;">
+</p>
+<p align="center">
 ![alt text](image-1.png)
-<div style="text-align: center;">
+</p>
 
 [github](https://github.com/jquiros2/node-red-contrib-json-schema-precision)
 [npmjs](https://www.npmjs.com/package/@jquiros/json-schema-validation-precision)
