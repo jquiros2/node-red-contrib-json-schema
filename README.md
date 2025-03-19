@@ -1,3 +1,11 @@
+# node-red-contrib-json-full-schema-validator-precision
+Starting to work on this as I need to be able to control the multipleofprecision option when calling ajv.
+
+Based on https://www.github.com/oarroyog/node-red-contrib-json-schema
+which was based on https://www.github.com/alessh/node-red-contrib-json-schema
+which was based on https://www.github.com/chameleonbr/node-red-contrib-json-schema
+
+
 # node-red-contrib-json-full-schema-validator
 JSON Full Schema validator for Node Red is pretty easy to use.
 Just open node properties and choose which property object wants to validate and paste JSON Schema
