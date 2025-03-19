@@ -4,6 +4,7 @@
   },
   "bundleDependencies": [],
   "dependencies": {
+    "@jquiros/json-schema-validation-precision": "^1.1.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "global": "^4.3.2"
@@ -19,8 +20,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "@jquiros2/json-schema-validation-precision",
+  "name": "@jquiros/json-schema-validation-precision",
   "node-red": {
+    "version": ">=4.0.0",
     "nodes": {
       "json-schema": "schema.js"
     }
@@ -33,6 +35,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "1.1.0",
-  "devDependencies": {},
   "author": "Jon Quiros based, on others"
 }
