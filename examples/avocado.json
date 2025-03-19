@@ -1,0 +1,96 @@
+[
+    {
+        "id": "ab0f1e70a4d781c6",
+        "type": "inject",
+        "z": "1733c1fcc7ed47c3",
+        "name": "",
+        "props": [
+            {
+                "p": "prepdoc",
+                "v": "{\"name\":\"Avocado\",\"calories\":160.123456789999,\"fat\":15.12345678,\"protein\":2.00000001}",
+                "vt": "json"
+            },
+            {
+                "p": "schema",
+                "v": "{\"$schema\":\"http://json-schema.org/draft-07/schema#\",\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\"},\"calories\":{\"type\":\"number\",\"minimum\":0,\"multipleOf\":1e-8},\"fat\":{\"type\":\"number\",\"minimum\":0,\"multipleOf\":1e-8},\"protein\":{\"type\":\"number\",\"minimum\":0,\"multipleOf\":1e-8}},\"required\":[\"name\",\"calories\",\"fat\",\"protein\"]}",
+                "vt": "json"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 120,
+        "y": 230,
+        "wires": [
+            [
+                "f87613abca2966af"
+            ]
+        ]
+    },
+    {
+        "id": "1622fcbaf825a2af",
+        "type": "debug",
+        "z": "1733c1fcc7ed47c3",
+        "name": "ok",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 195,
+        "wires": []
+    },
+    {
+        "id": "7732bf0bdd1c6978",
+        "type": "debug",
+        "z": "1733c1fcc7ed47c3",
+        "name": "not ok",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 665,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f87613abca2966af",
+        "type": "json-full-schema-validator-precision",
+        "z": "1733c1fcc7ed47c3",
+        "name": "",
+        "property": "prepdoc",
+        "propertyType": "msg",
+        "func": "",
+        "precision": "5",
+        "x": 370,
+        "y": 230,
+        "wires": [
+            [
+                "1622fcbaf825a2af"
+            ],
+            [
+                "7732bf0bdd1c6978"
+            ]
+        ]
+    },
+    {
+        "id": "1abec373e28dcd14",
+        "type": "comment",
+        "z": "1733c1fcc7ed47c3",
+        "name": "",
+        "info": "This example flow shows validation failing when precision is set to 5+. Nutritional values for avocados included here may be fictitious",
+        "x": 340,
+        "y": 285,
+        "wires": []
+    }
+]
