@@ -16,7 +16,7 @@
             func: {
                 value: ""
             },
-            precision: { value: 1 } // Default precision value
+            precision: { value: 6 } // Default precision value
         },
         label: function() {
             return this.name || "JSON Full Schema validator with precision";
@@ -75,6 +75,10 @@
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
+        <label for="node-input-precision"><i class="fa fa-wrench"></i> Precision</label>
+        <input type="number" id="node-input-precision" placeholder="Enter precision">
+    </div>
+    <div class="form-row">
         <label for="node-input-property">Property</label>
         <input type="text" id="node-input-property" style="width: 100%"/>
         <input type="hidden" id="node-input-propertyType"/>
@@ -87,13 +91,10 @@
     <div class="form-row node-text-editor-row">
         <div style="height: 250px;" class="node-text-editor" id="node-input-func-editor"></div>
     </div>
-    <div class="form-row">
-        <label for="node-input-precision"><i class="fa fa-wrench"></i> Precision</label>
-        <input type="number" id="node-input-precision" placeholder="Enter precision">
-    </div>
 </script>
 
 <script type="text/x-red" data-help-name="json-full-schema-validator-precision">
     <p>JSON Schema validator</p>
     <p>Put your JSON Schema on editor or in msg.schema and node will validate msg.payload. Error is returned on msg.error.</p>
+    <p>Enter your value for the ajv precision option. This is the number of decimal places to validate for numbers.</p>
 </script>
